@@ -15,6 +15,14 @@ namespace Assignment_1
         public int Age { get; set; }
         public int ShirtNumber { get; set; }
 
+        public FootballPlayer(int id, string name, int age, int shirtNumber)
+        {
+            Id = id;
+            Name = name;
+            Age = age;
+            ShirtNumber = shirtNumber;  
+        }
+
         public void CheckName()
         {
             if (Name.Length < 2)
