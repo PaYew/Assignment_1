@@ -11,10 +11,10 @@ namespace Assignment_1.Tests
     [TestClass()]
     public class FootballPlayerTests
     {
-        private FootballPlayer player = new FootballPlayer { Id = 1, Name = "Abcde", Age = 25, ShirtNumber = 10 };
-        private FootballPlayer playerName = new FootballPlayer { Id = 2, Name = "A", Age = 22, ShirtNumber = 15 };
-        private FootballPlayer playerAge = new FootballPlayer { Id = 4, Name = "Abcde", Age = 0, ShirtNumber = 25 };
-        private FootballPlayer playerShirt = new FootballPlayer { Id = 5, Name = "Abcde", Age = 22, ShirtNumber = 200 };
+        private FootballPlayer player = new FootballPlayer (1, "Abcde", 25, 10 );
+        private FootballPlayer playerName = new FootballPlayer (2, "A", 22,15 );
+        private FootballPlayer playerAge = new FootballPlayer (4, "Abcdef", 0, 25 );
+        private FootballPlayer playerShirt = new FootballPlayer (5,"Abcdefg",22, 200 );
 
 
         [TestMethod()]

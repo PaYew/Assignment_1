@@ -10,18 +10,18 @@ namespace Assignment_1
 {
     public class FootballPlayer
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public int ShirtNumber { get; set; }
-
-        public FootballPlayer(int id, string name, int age, int shirtNumber)
+        public FootballPlayer(int id, string name, int age, int shirtNo)
         {
             Id = id;
             Name = name;
             Age = age;
-            ShirtNumber = shirtNumber;  
+            ShirtNo = shirtNo;
         }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public int ShirtNo { get; set; }
+
 
         public void CheckName()
         {
@@ -37,7 +37,7 @@ namespace Assignment_1
 
         public void CheckShirtNumber()
         {
-            if (ShirtNumber < 1 || ShirtNumber > 99)
+            if (ShirtNo < 1 || ShirtNo > 99)
                 throw new ArgumentOutOfRangeException();
         }
 
